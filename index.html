@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PlayOrizone</title>
   <style>
     body {
@@ -37,7 +37,7 @@
       padding: 0 20px;
     }
 
-    .downloads, .videos, .sobre, .galeria {
+    .downloads, .videos, .tutorial, .sobre, .galeria {
       margin-bottom: 50px;
     }
 
@@ -81,6 +81,19 @@
       border: 2px solid #222;
     }
 
+    .tutorial ol {
+      padding-left: 20px;
+      line-height: 1.8;
+      background-color: #1a1a1a;
+      border-left: 4px solid #00bcd4;
+      border-radius: 6px;
+      padding: 15px;
+    }
+
+    .tutorial li {
+      margin-bottom: 10px;
+    }
+
     footer {
       background-color: #1a1a1a;
       text-align: center;
@@ -109,12 +122,23 @@
 <main>
   <section class="downloads">
     <h2>📥 Downloads</h2>
-    <a href="LINK_DO_MODPACK_NORMAL" class="download-btn">Modpack Normal</a>
-    <a href="LINK_DO_MODPACK_LITE" class="download-btn">Modpack Lite (PC fraco)</a>
+    <a href="LINK_DO_MODPACK_NORMAL" class="download-btn" download>Modpack Normal</a>
+    <a href="LINK_DO_MODPACK_LITE" class="download-btn" download>Modpack Lite (PC fraco)</a>
+  </section>
+
+  <section class="tutorial">
+    <h2>📋 Como Instalar o Modpack</h2>
+    <ol>
+      <li>Baixa o Modpack Normal ou Lite acima.</li>
+      <li>Abre o <strong>CurseForge Launcher</strong> ou <strong>Prism Launcher</strong>.</li>
+      <li>Clica em “Importar Modpack” e escolhe o ficheiro `.mrpack` ou `.zip` que baixaste.</li>
+      <li>Espera que instale tudo automaticamente.</li>
+      <li>Clica em “Jogar” e diverte-te no mundo de Orizone!</li>
+    </ol>
   </section>
 
   <section class="videos">
-    <h2>🎬 Vídeos em Destaque</h2>
+    <h2>🛠️ Vídeo de como instalar os modpacks</h2>
     <iframe src="https://www.youtube.com/embed/mNhzTBYdMJw" allowfullscreen></iframe>
   </section>
 
